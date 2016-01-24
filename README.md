@@ -2,6 +2,8 @@
 
 Cocos2DDynamicBokeh is a small test I did for a company interview.  Project contains a **DynamicBackgroundLayer** node that generates **Bokeh** according to settings.  All bokehs are batched into 2 draw calls for blurred and sharp variants to create fake depth of field effect while maintaining performance. Bokeh lifetime colour can be customize by modifying *bokeh_gradient.png* in the resources folder.
 
+![Alt text](README/BokehGif.gif?raw=true "Title")
+
 
 ## Cocos2D-x Version
 
