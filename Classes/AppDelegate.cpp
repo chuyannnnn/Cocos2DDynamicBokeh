@@ -48,7 +48,11 @@ bool AppDelegate::applicationDidFinishLaunching() {
     auto director = Director::getInstance();
     auto glview = director->getOpenGLView();
     if(!glview) {
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_MAC)
+        glview = GLViewImpl::createWithRect("MyApp", Rect(0,0, 320, 480));
+#else
         glview = GLViewImpl::create("My Game");
+#endif
         director->setOpenGLView(glview);
     }
     
